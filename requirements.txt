@@ -1,0 +1,28 @@
+# CA-4 Project Dependencies (Milestone 5 Verified)
+# Tested on Python 3.10+ / 3.13 (Windows CPU / Linux)
+
+# Core Scientific Computing
+numpy>=1.24.0
+pandas>=1.5.0
+scikit-learn>=1.3.0
+
+# Deep Learning Framework
+torch>=2.0.0
+
+# Pretrained Model & Foundation Model Ecosystem
+transformers>=4.40.0
+accelerate>=0.30.0
+einops>=0.7.0
+chronos-forecasting>=2.0.0
+
+# Visualization & Profiling (Headless-compatible)
+matplotlib>=3.7.0
+
+# Report Generation
+python-docx>=0.8.11
+
+# Interactive Dashboard
+streamlit>=1.28.0
+
+# Automated Testing
+pytest>=7.0.0

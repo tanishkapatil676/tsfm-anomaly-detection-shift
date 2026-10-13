@@ -1,0 +1,38 @@
+{
+  "project_name": "Time-Series Foundation Models for Anomaly Detection under Distribution Shift",
+  "dataset_source": "UCR Time Series Anomaly Archive (Wu & Keogh 2021)",
+  "raw_data_dir": "data/raw",
+  "processed_data_dir": "data/processed",
+  "target_series_count": 5,
+  "dataset_selection_policy": "8_point_data_quality_verification",
+  "random_seed": 42,
+  "training_prefix_handling": "normal_only_split",
+  "val_split_fraction": 0.20,
+  "min_train_len": 1000,
+  "min_val_len": 200,
+  "missing_value_policy": "reject",
+  "window_len": 100,
+  "stride": 1,
+  "anomaly_label_format": "binary_pointwise",
+  "indexing_convention": "python_0_based_internal",
+  "score_direction_convention": "higher_score_higher_anomaly_likelihood",
+  "future_models": [
+    "isolation_forest",
+    "lstm_ae",
+    "moment_1_small",
+    "chronos_bolt_tiny"
+  ],
+  "future_shift_scale_factors": [
+    1.25,
+    1.50
+  ],
+  "future_evaluation_metrics": [
+    "precision",
+    "recall",
+    "f1",
+    "pr_auc",
+    "roc_auc"
+  ],
+  "results_json_dir": "results/json",
+  "results_plots_dir": "results/plots"
+}

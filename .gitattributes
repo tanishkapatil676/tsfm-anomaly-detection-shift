@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .gitattributes — Consistent line endings for all contributors / OS
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Default: normalise all text files to LF in the repository
+* text=auto eol=lf
+
+# Python & configuration text files — always LF
+*.py   text eol=lf
+*.txt  text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.csv  text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.cfg  text eol=lf
+*.ini  text eol=lf
+
+# Binary files — never modify
+*.png   binary
+*.svg   binary
+*.jpg   binary
+*.docx  binary
+*.zip   binary
+*.pt    binary
+*.pth   binary
+*.bin   binary
+*.safetensors binary
+*.npy   binary
+*.npz   binary

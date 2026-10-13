@@ -1,0 +1,58 @@
+# Python bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env
+
+# Large Raw & Processed Datasets (Keep repository lightweight)
+# NOTE: data/raw/authentic/*.txt are the 5 canonical series used in experiments.
+#       They are small enough (~1.4 MB each) to commit for reproducibility.
+#       Exclude everything else in data/raw/ and all processed files.
+data/raw/*.txt
+data/raw/*.csv
+data/raw/*.npy
+data/raw/synthetic_fixtures/
+data/processed/*.npz
+
+# Large archive — download from doi:10.6084/m9.figshare.26410744 instead
+data/UCR_TimeSeriesAnomalyDatasets2021.zip
+
+# Model Checkpoints & Pretrained Weights
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+checkpoints/
+
+# Superseded / archived experiment run (replaced by Milestone 4A clean rerun)
+results_superseded_m4/
+
+# Scratch workspace (agent working files, not project deliverables)
+scratch/
+
+# Report binary — regenerate with: python scripts/generate_report.py
+# Uncomment the line below to exclude the .docx from Git (keep if you want it committed)
+# report/*.docx
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+
+# Experiment Outputs (Exclude temporary plots, preserve READMEs)
+results/plots/*.png
+results/plots/*.svg

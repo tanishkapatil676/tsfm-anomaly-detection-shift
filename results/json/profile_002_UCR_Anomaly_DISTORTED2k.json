@@ -1,0 +1,55 @@
+{
+  "series_id": "002_UCR_Anomaly_DISTORTED2k",
+  "filename": "002_UCR_Anomaly_DISTORTED2k_10000_15000_15200.txt",
+  "filepath": "R:\\GIS_Emergency_Healthcare_CSMC\\tanishka project\\data\\raw\\002_UCR_Anomaly_DISTORTED2k_10000_15000_15200.txt",
+  "split_structure": {
+    "total_length": 20000,
+    "t_split_parameter": 10000,
+    "train_length": 10000,
+    "val_length": 2000,
+    "test_length": 10000
+  },
+  "descriptive_statistics": {
+    "full_series": {
+      "mean": 0.03709579245,
+      "std": 0.7992874352509849,
+      "min": -1.379436,
+      "max": 4.228566
+    },
+    "training_prefix": {
+      "mean": 0.000473885399999989,
+      "std": 0.7147645820418346,
+      "min": -1.379436,
+      "max": 1.335618
+    },
+    "test_segment": {
+      "mean": 0.0737176995,
+      "std": 0.87415677793334,
+      "min": -1.295874,
+      "max": 4.228566
+    }
+  },
+  "anomaly_annotation": {
+    "source_anomaly_start": 15000,
+    "source_anomaly_end": 15200,
+    "test_anomaly_start": 4999,
+    "test_anomaly_end_inclusive": 5199,
+    "anomaly_duration_timestamps": 201,
+    "test_anomaly_positive_timestamps": 201,
+    "test_anomaly_ratio": 0.0201
+  },
+  "data_quality_evaluation": {
+    "is_eligible": true,
+    "rejection_reasons": [],
+    "warnings": [],
+    "check_details": {
+      "total_length": 20000,
+      "t_split": 10000,
+      "nan_count": 0,
+      "inf_count": 0,
+      "test_length": 10000,
+      "val_length": 2000,
+      "train_std": 0.7147645820418346
+    }
+  }
+}

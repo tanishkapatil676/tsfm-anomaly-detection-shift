@@ -6,10 +6,9 @@
 
 An academic research and experimental benchmarking suite evaluating the robustness of pretrained **Time-Series Foundation Models (TSFMs)** compared to conventional baselines under controlled distribution shift on the **UCR Time Series Anomaly Archive**.
 
-* **Student:** Tanishka Patil (TY IT, Division 3, PRN: 2405120)
+* **Student:** Tanishka Patil 
 * **Institute:** Institute of Information and Communication Technology (IICT), MGM University, Chh. Sambhajinagar
 * **Academic Year:** 2026–2027
-* **Project Guide:** `[To be confirmed: Guide Name, Designation]`
 
 ---
 
